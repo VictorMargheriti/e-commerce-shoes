@@ -31,6 +31,11 @@ header {
     margin-right: auto;
 }
 
+.logo:hover {
+    transform: rotate(360deg);
+    transition: 0.3s
+}
+
 .nav-links {
     list-style: none;
 }
@@ -71,9 +76,9 @@ header {
 }
 .container .box {
     position: relative;
-    width: 300px;
+    width: 320px;
     height: 400px;
-    margin: 40px;
+    margin: 20px;
     background: #fff;
     border-radius: 50px;
     transform-style: preserve-3d;
@@ -118,6 +123,10 @@ header {
     opacity: 1;
     transform-style: preserve-3d;
     transform: translate3d(-50%, -50%, 50px);
+}
+
+.container .box:hover .circle {
+    transform: translate3d(-50%, -50%, 50px) rotate(360deg);
 }
 
 .container .box .shoe {
