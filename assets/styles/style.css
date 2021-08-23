@@ -1,18 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Rubik Mono One', sans-serif;
 }
 
-body {
+li a {
+    font-family: 'Russo One', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 10%;
+    background: #fff
+}
+
+.logo {
+    cursor: pointer;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: auto;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: rgb(141, 202, 202)
+}
+
+.title {
+    margin-right: auto;
+}
+
+.main {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background: linear-gradient(180deg, #000000 0%, #FFFFFF 94.27%);
-
 }
 
 .container {
@@ -109,4 +154,17 @@ body {
 
 .container .box:nth-child(5) .circle {
     background: linear-gradient(138.56deg, #62DAEF 27.09%, #F0804D 49.4%, #D6FCB5 65.85%);
+}
+
+html::-webkit-scrollbar {
+	width: 15px;
+}
+
+html::-webkit-scrollbar-track {
+	background: #fff;
+}
+
+html::-webkit-scrollbar-thumb {
+	background: transparent;
+	box-shadow: 0px 0px 0px 100vh #16162D;
 }
